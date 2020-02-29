@@ -11,4 +11,15 @@
     box-shadow: none;
     border: none;
     padding: 0;
+    box-sizing: border-box;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transition: 0.2s;
+      opacity: 0.9;
+    }
 }
