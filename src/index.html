@@ -9,7 +9,183 @@
 </head>
 
 <body class="page-body">
-<h1>Форум</h1>
+<!-- <h1 class="visually-hidden">Форум</h1> -->
+  <header class="header">
+    <nav class="header__menu">
+      <a class="header__menu-item" href="#registration">Регистрация</a>
+      <a class="header__menu-item" href="#">Спикеры</a>
+      <a class="header__menu-item" href="#">Программа</a>
+      <a class="header__menu-item" href="#">Фотоотчет</a>
+    </nav>
+  </header>
+  <section class="title-block">
+    <div class="title-block__content">
+      <p class="title-block__description">Цифровая трансформация энергетики и ЖКХ <span>Екатеринбург 3 апреля</span></p>
+      <p class="title-block__caption">Выставка - <span>ФОРУМ</span></p>
+      <h1 class="title-block__header">Умный город - 2020</h1>
+      <p class="title-block__place">Международный выставочный центр «Екатеринбург-ЭКСПО» (Конгресс-Центр)</p>
+    </div>
+  </section>
+  <section class="about">
+    <h2 class="about__header"> О форуме</h2>
+    <ul class="about__list">
+      <li class="about__item about__item--left">
+        <img src="img/about-1.jpg" alt="фотография">
+        <p>Межрегиональная выставка-форум <b>«Цифровая трансформация энергетики и ЖКХ. Умный город – 2020»</b> - это значимые цифровые технологии, планируемые к реализации в энергетическом секторе, жилищно-коммунальном хозяйстве и городской среде при поддержке Правительства Свердловской области.</p>
+      </li>
+      <li class="about__item about__item--right">
+        <p>Деловая программа с акцентом на практической применимости цифровых решений в энергетике и ЖКХ, механизмах их финансирования; лучшие практики и перспективы развития энергетического хозяйства в рамках реализации национальной программы «Цифровая экономика Российской Федерации».</p>
+        <img src="img/about-2.jpg" alt="фотография">
+      </li>
+    </ul>
+    <ul class="about__info-list">
+      <li class="about__info-item about__info-item--1"><span>день</span>деловой программы</li>
+      <li class="about__info-item about__info-item--6"><span>тысяч</span>квадратных метров</li>
+      <li class="about__info-item about__info-item--1"><span>тысяча</span>участников</li>
+      <li class="about__info-item about__info-item--15"><span>&nbsp;</span>деловых мероприятий</li>
+      <li class="about__info-item about__info-item--15"><span>&nbsp;</span>спикеров</li>
+    </ul>
+  </section>
+  <section class="participants">
+    <h2 class="participants__header">Участники форума</h2>
+    <ul class="participants__list">
+      <li class="participants__item">представители стран Евразийского экономического союза</li>
+      <li class="participants__item">представители федеральных и региональных органов исполнительной власти </li>
+      <li class="participants__item">производители программного обеспечения и цифрового оборудования </li>
+      <li class="participants__item">органы местного самоуправления муниципальных образований Свердловской области</li>
+      <li class="participants__item">предприятия энергетики и ЖКХ и крупнейших поставщиков телекоммуникационных услуг</li>
+    </ul>
+  </section>
+  <section class="partners">
+    <h2 class="partners__header">партнеры форума</h2>
+    <ul class="partners__list">
+      <li class="partners__item"><img src="" alt=""></li>
+      <li class="partners__item"><img src="" alt=""></li>
+      <li class="partners__item"><img src="" alt=""></li>
+      <li class="partners__item"><img src="" alt=""></li>
+      <li class="partners__item"><img src="" alt=""></li>
+    </ul>
+  </section>
+  <section id="registration" class="registration">
+    <div class="registration__wrapper">
+      <div class="registration__header-block">
+        <h2 class="registration__header">Регистрация</h2>
+        <!-- <span class="registration__header-decor"></span> -->
+      </div>
+      <form class="registration__form" action="#" method="post">
+        <div>
+          <label class="visually-hidden" for="region">Регион</label>
+          <select name="region" id="region">
+            <option></option>
+            <option></option>
+          </select>
+        </div>
+        <div>
+          <label class="visually-hidden" for="town">Город</label>
+          <select name="town" id="town"></select>
+        </div>
+        <div>
+          <label for="fio">ФИО</label>
+          <input type="text" name = "fio" id = "fio" placeholder = "Иванов Сергей" required>
+        </div>
+        <div>
+          <label for="position">Должность</label>
+          <input type="text" name = "position" id = "position" placeholder="исполнительный директор"> 
+        </div>
+        <div>
+          <label for="company">Компания</label>
+          <input type="text" name="company" id="company" placeholder='ООО "Проспект"' required>
+        </div>
+        <div>
+          <label for="phone">Телефон</label>
+          <input type="text" name="phone" id="phone" placeholder="+7 (____) _________" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email" placeholder="info@mail.ru" required>
+        </div>
+        <button class=" registration__submit btn">Зарегистрироваться</button>
+      </form>
+    </div>
+
+  </section>
+  <section class="speakers">
+    <h2 class="speakers__header">Спикеры</h2>
+    <div class="speakers__container swiper-container">
+      <ul class="speakers__list swiper-wrapper">
+        <li class="speaker swiper-slide">
+          <div class="speaker__card">
+            <div class="speaker__header-block">
+              <h3 class="speaker__name">Мартин Ролл</h3>
+              <p class="speaker__about">Председатель Конференции Женского Форума</p>
+            </div>
+            <div class="speaker__theme-block">
+              <span>Тема: </span>
+              <p class="speaker__theme">Мартин Ролл предлагает опытным глобальным бизнес-стратегам, старшим консультантам и помощникам для компаний из списка Fortune 500.</p>
+            </div>
+            <a class="speaker__presentation btn" href="#">Скачать презентацию</a>
+          </div>
+        </li>
+        <li class="speaker swiper-slide">
+          <div class="speaker__card">
+            <div class="speaker__header-block">
+              <h3 class="speaker__name">Мартин Ролл</h3>
+              <p class="speaker__about">Председатель Конференции Женского Форума</p>
+            </div>
+            <div class="speaker__theme-block">
+              <span>Тема: </span>
+              <p class="speaker__theme">Мартин Ролл предлагает опытным глобальным бизнес-стратегам, старшим консультантам и помощникам для компаний из списка Fortune 500.</p>
+            </div>
+            <a class="speaker__presentation btn" href="#">Скачать презентацию</a>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+  <section class="program">
+    <h2 class="program__header">Программа форума</h2>
+    <ul class="program__list">
+      <li class="program__item"><span>09.00 - 10.00</span>Регистрация</li>
+      <li class="program__item"><span>10.00 - 10.20</span>Открытие выставки-форума</li>
+      <li class="program__item"><span>10.20 - 10.30</span>Перерыв 10мин</li>
+      <li class="program__item"><span>10.30 - 11.50</span>Пленарная сессия</li>
+      <li class="program__item"><span>11.50 - 12.00 </span>Перерыв 10мин</li>
+      <li class="program__item"><span>12.00 - 13.20</span>Выступления по секциям</li>
+      <li class="program__item"><span>13.20 - 14.20</span> Обед</li>
+      <li class="program__item"><span>14.20 - 15.40</span>Круглые столы и презентации</li>
+      <li class="program__item"><span>15.40 - 15.50</span>Перерыв 10мин</li>
+      <li class="program__item"><span>15.50 - 17.10</span>Круглые столы и выступления по секциям</li>
+      <li class="program__item"><span>17.10 - 18.00 </span>Закрытие выставки-форума (фуршет)</li>
+    </ul>
+    <h3 class="program__sections-header">Программа секцияй по залам</h3>
+    <div class="program__sections">
+      <ul class="program__tab-list">
+        <li class="program__tab"></li>
+      </ul>
+      <div class="program__section-content program__section-content-1">
+        <ul class="program__section-content-list">
+          <li class="program__section-content-item">
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="#" class="program__download btn">Скачать программу</a>
+  </section>
+  <section class="gallery">
+
+  </section>
+  <section class="contacts">
+    <h2 class="contacts__header">Контакты</h2>
+    <div class="contacts__content-block">
+      <div class="contacts__map"></div>
+      <div class="contacts__info">
+        <a class="contacts__adress" href=""></a>
+        <a class="contacts__phone" href=""></a>
+      </div>
+    </div>
+  </section>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

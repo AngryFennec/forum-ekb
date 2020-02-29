@@ -10,3 +10,42 @@
     url("../font/HarmoniaSansProCyr-Regular.woff") format("woff");
 
 }
+
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local("Harmonia Sans Pro Cyr"),
+    local("HarmoniaSansProCyr"),
+    url("../font/HarmoniaSansProCyr-Light.woff2") format("woff2"),
+    url("../font/HarmoniaSansProCyr-Light.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Harmonia Sans Pro Cyr"),
+    local("HarmoniaSansProCyr"),
+    url("../font/HarmoniaSansProCyr-Bold.woff2") format("woff2"),
+    url("../font/HarmoniaSansProCyr-Bold.woff") format("woff");
+
+}
+
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Harmonia Sans Pro Cyr"),
+    local("HarmoniaSansProCyr"),
+    url("../font/HarmoniaSansProCyr-Black.woff2") format("woff2"),
+    url("../font/HarmoniaSansProCyr-Black.woff") format("woff");
+
+}
