@@ -3,4 +3,6 @@
  * //= modules/file.js
  */
 
+//= modules/speakers.js
 //= modules/tabs.js
+

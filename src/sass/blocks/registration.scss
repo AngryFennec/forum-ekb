@@ -1,3 +1,7 @@
+.registration {
+    background: url('../img/registration-back.png') no-repeat 0 100%;
+    background-size: contain;
+}
 .registration__wrapper {
     width: 100%;
     max-width: 532px;
@@ -20,7 +24,7 @@
     text-align: center;
     box-shadow: -60px 48px 0 0 #90C7B6;
     margin: 50px auto;
-    // margin: 50px 60px;
+    margin-top: 75px
 }
 
 .registration__form {
@@ -45,9 +49,27 @@
         box-shadow: none;
         height: 35px;
         padding: 0 15px;
+        font-family: inherit;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    & select {
+        box-shadow: none;
+        appearance: none;
+        border-right: none;
+        background: url('../img/select.svg') no-repeat 100% -1px;
+        
+    }
+
+    & label {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
     }
 }
 
 .registration__submit {
-    margin-top: 80px;
+    margin-top: 62px;
 }

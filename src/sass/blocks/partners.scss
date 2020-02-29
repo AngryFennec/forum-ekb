@@ -1,6 +1,7 @@
 .partners {
     background-color: #FCF7FF;
-    padding: 77px 20px;
+    padding: 77px 20px 0 20px;
+    border-top: 4px dashed #82C8BB;
 }
 
 .partners__header {
@@ -11,4 +12,29 @@
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 90px;
+}
+
+.partners__list {
+    width: 100%;
+    max-width: 1306px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners__item {
+    width: 18.5%;
+    margin-right: 1.87%;
+    background: white;
+    min-height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &:nth-child(5n) {
+        margin-right: 0;
+    }
 }
