@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    font-family: $font;
+    position: relative;
+    z-index: 1;
+}
+
+.header__menu {
+    width: 100%;
+    max-width: 832px;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.header__menu-item {
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    width: 25%;
+    text-align: center;
+    padding: 55px 10px;
+    color: black;
+    border-right: 1px solid #90C7B6;
+    background-color: #FCF7FF;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover {
+        background-color: white;
+        transition:  background-color 0.5s;
+    }
+}
