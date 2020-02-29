@@ -1,5 +1,6 @@
 .speakers {
     background-color: #FCF7FF;
+    padding-bottom: 80px;
 }
 
 .speakers__header {
@@ -16,10 +17,137 @@
     box-shadow: 58px 48px 0 0 #90C7B6;
     margin: 50px auto;
     margin-top: 90px;
-
 }
 
 .speakers__container {
     max-width: 1236px;
+    margin-top: 120px;
+
+    padding: 0 100px;
+    padding-bottom: 70px;
 }
-// 1236
+
+.speakers__list {
+    padding: 0;
+    list-style: none;
+}
+
+.speaker__card {
+    background: white;
+    padding: 32px 45px 55px 32px;
+    display: flex;
+    flex-direction: column;
+    max-width: 411px;
+    box-sizing: border-box;
+}
+
+.speaker__name {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.speaker__about {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+}
+
+.speaker__header-block {
+    display: flex;
+
+    & img {
+        align-self: flex-start;
+    }
+
+}
+
+.speaker__theme-block {
+    margin-top: 15px;
+    display: flex;
+
+    & span {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 5px;
+        margin-right: 45px;
+    }
+}
+
+.speaker__theme {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 0;
+}
+
+.speaker__presentation {
+    align-self: center;
+    margin-top: 20px;
+}
+
+.speakers .swiper-slide{
+    transition: 0.3s;
+    opacity: 0;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.speakers .swiper-slide-active {
+    opacity: 1;
+    z-index: 1;
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    & .speaker__card {
+        box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.speakers .swiper-slide-next {
+    justify-content: flex-start;
+    opacity: 0.5;
+}
+
+.speakers .swiper-slide-prev {
+    justify-content: flex-end;
+    opacity: 0.5;
+}
+
+.speakers .swiper-button-prev {
+    left: 80px;
+    &::after { 
+        font-size: 65px;
+        font-weight: 300;
+        color: grey;
+    }
+}
+.speakers .swiper-button-next {
+    right: 80px;
+    &::after { 
+        font-size: 65px;
+        font-weight: 300;
+        color: grey;
+    }
+    
+}
+
+.speakers .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    background: transparent;
+    border: 1px solid black;
+
+}
+
+.speakers .swiper-pagination-bullet-active {
+    background: black;
+}
+
+.speakers .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
