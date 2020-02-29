@@ -5,4 +5,4 @@
 
 //= modules/speakers.js
 //= modules/tabs.js
-
+//= modules/gallery.js
