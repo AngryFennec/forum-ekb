@@ -89,7 +89,7 @@
 }
 
 .speakers .swiper-slide{
-    transition: margin-top 1s, opacity 1s;
+    transition: margin-top 0.4s, opacity 0.4s;
     opacity: 0;
     margin-top: 22px;
     display: flex;
@@ -97,7 +97,7 @@
 }
 
 .speakers .swiper-slide-active {
-    transition: margin 1s, opacity 0.4s;
+    transition: margin 0.4s, opacity 0.4s;
     opacity: 1;
     z-index: 1;
     margin-top: 0;
@@ -111,7 +111,7 @@
 .speakers .swiper-slide-next {
     justify-content: flex-start;
     opacity: 0.5;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .speakers .swiper-slide-prev {
@@ -165,4 +165,23 @@
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
+    .speakers .swiper-button-prev {
+        display: none;
+    }
+    .speakers .swiper-button-next {
+        display: none;
+    }
+
+    .speakers__container {
+        padding: 0 20px 50px 20px;
+    }
 }
+
+// @media (max-width: 767px) {
+
+
+//     .speakers .swiper-slide-active {
+//         width: 100% !important;
+//     }
+// }
