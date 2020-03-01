@@ -5,9 +5,9 @@
     min-height: 587px;
     height: 100vh;
     box-sizing: border-box;
-    background: url('../img/title-back.png') no-repeat 0 100%;
+    background: url('../img/title-back.png') repeat-x 0 100%;
     background-color: #90C7B6;
-    background-size: 100% 56%;
+    background-size: 80% auto;
 }
 
 .title-block__content {

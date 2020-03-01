@@ -75,7 +75,13 @@
     }
 }
 
+@media (max-width: 768px) {
+    .partners__header {
+        margin-bottom: 40px;
+    }
+}
 @media(max-width: 600px) {
+
     .partners__item {
         width: 48%;
         margin-right: 2%;
