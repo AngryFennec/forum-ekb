@@ -11,12 +11,14 @@
 <body class="page-body">
   <header class="header">
     <nav class="header__menu">
-      <a class="header__menu-item anchor" href="#about">О форуме</a>
-      <a class="header__menu-item anchor" href="#registration">Регистрация</a>
-      <a class="header__menu-item anchor" href="#speakers">Спикеры</a>
-      <a class="header__menu-item anchor" href="#program">Программа</a>
-      <a class="header__menu-item anchor" href="#gallery">Фотоотчет</a>
-      <a class="header__menu-item anchor" href="#contacts">Контакты</a>
+      <div class="header__menu-block">
+        <a class="header__menu-item anchor" href="#about">О форуме</a>
+        <a class="header__menu-item anchor" href="#registration">Регистрация</a>
+        <a class="header__menu-item anchor" href="#speakers">Спикеры</a>
+        <a class="header__menu-item anchor" href="#program">Программа</a>
+        <a class="header__menu-item anchor" href="#gallery">Фотоотчет</a>
+        <a class="header__menu-item anchor" href="#contacts">Контакты</a>
+      </div>
     </nav>
     <div class="header__burger-wrapper"><button class="header__burger" type="button"><img src="img/burger.svg" alt="иконка меню"></button></div>
   </header>
@@ -290,7 +292,10 @@
     </div>
   </section>
 
-  <section class="program">
+
+
+ <section class="program">
+
     <div class="program__wrapper wrapper">
 
       <h2 class="program__header">Программа форума</h2>
@@ -437,29 +442,7 @@
           </li>
         </ul>
       </div>
-      <!--
-        <div class="gallery__select">
-          <label class="visually-hidden" for="category">Категория</label>
-          <select name="category" id="category" style="color:#808080;" onchange="this.style.color='black'">
-            <option selected disabled hidden>Выберите категорию</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-            <option>Круглый стол "Развитие систем учета электрической энергии. Вступление
-              в силу Федерального закона № 522-ФЗ"</option>
-          </select>
-        </div>-->
+
         <ul class="gallery__sliders">
           <li class="gallery__slider gallery__slider--active">
             <div class="swiper-container gallery-top">
@@ -470,7 +453,7 @@
                 <div class="swiper-slide"></div>
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -512,7 +495,7 @@
 
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -542,7 +525,7 @@
 
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -563,7 +546,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide"></div>
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -585,7 +568,7 @@
 
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -607,7 +590,7 @@
 
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -629,7 +612,7 @@
 
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -651,7 +634,7 @@
 
 
               </div>
-              <!-- Add Arrows -->
+
               <div class="swiper-button-next swiper-button-white"></div>
               <div class="swiper-button-prev swiper-button-white"></div>
             </div>
@@ -675,7 +658,7 @@
       </div>
     </div>
 
-  </section>
+  </section> 
   <section class="contacts">
 
     <h2 class="contacts__header">Контакты</h2>
