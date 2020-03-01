@@ -16,10 +16,14 @@
     freeMode: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
+    observer: true,
+observeParents: true,
   });
   thumbsSliders.push(gTh);
   var gT = new Swiper(tops[i], {
     spaceBetween: 10,
+    observer: true,
+observeParents: true,
     navigation: {
       nextEl: nextBtns[i],
       prevEl: prevBtns[i],
@@ -53,6 +57,8 @@ if (galleryTabs && galleryItems) {
       removeActiveSliders();
       galleryTabs[i].classList.add('gallery__tab--active');
       galleryItems[i].classList.add('gallery__slider--active');
+      gallerySlider[i].reInit();
+      thumsSliders[i].reInit();
     })
   });
 }
