@@ -12,7 +12,7 @@ function sendAjaxForm(result_form, ajax_form, url) {
         url:     url, //url страницы (action_ajax_form.php)
         type:     "POST", //метод отправки
         dataType: "html", //формат данных
-        data: new formData($('#ajax_form')[0]);,  // Сеарилизуем объект
+        data: new formData($('#ajax_form')[0]),  // Сеарилизуем объект
         success: function(response) { //Данные отправлены успешно
 
     	},
