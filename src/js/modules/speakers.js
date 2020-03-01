@@ -7,14 +7,14 @@
         slidesPerView: '3',
         spaceBetween: -150,
         centeredSlides: true,
-        speed: 1000,
+        speed: 400,
         navigation: {
         nextEl: '.speakers__next',
         prevEl: '.speakers__prev',
         },
         pagination: {
-            el: '.speakers__bullets'
+            el: '.speakers__bullets',
+            clickable: true,
           },
-        paginationClickable: true,
     });
 })();
