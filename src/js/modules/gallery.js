@@ -5,6 +5,7 @@
   var gallerySliders = [];
   var thumbs = Array.from(document.querySelectorAll('.gallery-thumbs'));
   var tops = Array.from(document.querySelectorAll('.gallery-top'));
+  if (tops && thumbs) {
 
   tops.forEach(function(item, i) {
     var gTh = new Swiper(thumbs[i], {
@@ -27,6 +28,7 @@
   });
   gallerySliders.push(gT);
   })
+}
 
 
 var galleryTabs = Array.from(document.querySelectorAll('.gallery__tab'));
