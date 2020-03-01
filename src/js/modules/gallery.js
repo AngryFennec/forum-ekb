@@ -56,6 +56,13 @@ if (galleryTabs && galleryItems) {
 }
 
 
+var clearBtn = document.querySelector('.btn-clear');
+var checkboxes = Array.from(document.querySelectorAll('.swiper-slide__checkbox input'));
+clearBtn.addEventListener('click', function(evt) {
+  checkboxes.forEach(function(item) {
+    item.checked = false;
+  })
+});
 
 
 

@@ -8,3 +8,4 @@
 //= modules/menu.js
 //= modules/gallery.js
 //= modules/dropdown.js
+//= modules/form.js
