@@ -10,14 +10,15 @@ $(".header__burger").on('click', function(){
   $('.header__menu').fadeToggle(400);
 
   $('.header__menu').on('click', function(){
-    if($(document).width() <=1024) {
+    if($(document).width() <=768) {
       $(this).hide();
     }
   });
 });
 
 $(window).on('resize', function(){
-  if($(document).width() > 1024) {
+  console.log($(document).width())
+  if($(document).width() > 768) {
     $('.header__menu').css('display', 'flex');
   } else {
     $('.header__menu').css('display', 'none');
