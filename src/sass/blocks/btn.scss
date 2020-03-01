@@ -35,3 +35,12 @@
       color: #FE5F55;
     }
 }
+
+@media(max-width: 768px) {
+  .btn {
+    width: 243px;
+      height: 59px;
+      font-size: 16px;
+      line-height: 19px;
+  }
+}

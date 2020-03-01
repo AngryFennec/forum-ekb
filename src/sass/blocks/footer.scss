@@ -21,3 +21,15 @@
         transform: translate(-50%);
     }
 }
+
+@media(max-width: 1024px) {
+    .footer p {
+        top: 10px;
+    }
+}
+
+@media(max-width: 768px) {
+    .footer p {
+        font-size: 18px;
+    }
+}
