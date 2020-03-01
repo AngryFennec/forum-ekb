@@ -48,3 +48,18 @@
         left: 0;
     }
 }
+
+@media (max-width: 768px) {
+
+    .participants__header {
+        margin-bottom: 40px;
+    }
+    .participants__item {
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+        font-size: 18px;
+        line-height: 130%;
+        min-height: 46px;
+    }
+}

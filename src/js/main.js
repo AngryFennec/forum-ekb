@@ -5,4 +5,5 @@
 
 //= modules/speakers.js
 //= modules/tabs.js
+//= modules/menu.js
 

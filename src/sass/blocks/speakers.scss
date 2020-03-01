@@ -89,7 +89,7 @@
 }
 
 .speakers .swiper-slide{
-    transition: 0.3s;
+    transition: margin-top 1s, opacity 1s;
     opacity: 0;
     margin-top: 22px;
     display: flex;
@@ -97,6 +97,7 @@
 }
 
 .speakers .swiper-slide-active {
+    transition: margin 1s, opacity 0.7s;
     opacity: 1;
     z-index: 1;
     margin-top: 0;
@@ -110,11 +111,13 @@
 .speakers .swiper-slide-next {
     justify-content: flex-start;
     opacity: 0.5;
+    transition: 1s;
 }
 
 .speakers .swiper-slide-prev {
     justify-content: flex-end;
     opacity: 0.5;
+    transition: 1s;
 }
 
 .speakers .swiper-button-prev {
@@ -150,4 +153,8 @@
 
 .speakers .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 10px;
+}
+
+@media (max-width: 1024px) {
+
 }

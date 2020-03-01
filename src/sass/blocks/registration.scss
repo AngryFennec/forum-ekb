@@ -73,3 +73,48 @@
 .registration__submit {
     margin-top: 62px;
 }
+
+@media(max-width: 768px) {
+    .registration__header {
+        padding: 20px;
+        font-size: 30px;
+        line-height: 30px;
+        max-width: 280px;
+        box-shadow: -15px 15px 0 0 #90C7B6;
+        margin-top: 40px;
+    }
+
+    .registration__form {
+        margin-top: 10px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media(max-width: 500px) {
+    .registration__form {
+        margin-top: 10px;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        & div {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        & input, select {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        & label {
+            margin-bottom: 5px;
+        }
+
+        & select:first-of-type {
+            margin-top: 30px;
+        }
+    }
+
+
+}
