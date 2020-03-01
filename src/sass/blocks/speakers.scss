@@ -166,3 +166,13 @@
         margin-bottom: 40px;
     }
 }
+
+@media (max-width: 760px) {
+    .speakers .swiper-button-prev {
+display: none;
+    }
+    .speakers .swiper-button-next {
+display: none;
+      
+}
+}

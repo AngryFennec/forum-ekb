@@ -17,7 +17,7 @@
             clickable: true,
           },
             breakpoints: {
-          800: {
+          760: {
             initialSlide: 1,
             slidesPerView: 3,
             spaceBetween: -150,
