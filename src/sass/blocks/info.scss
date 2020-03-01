@@ -15,24 +15,24 @@
 
     &::after {
         content: "";
-        background: url('../img/info-2.png') no-repeat 0 0;
+        background: url('../img/back-info.png') no-repeat center 100%;
+        background-size: contain;
         position: absolute;
         bottom: -3px;
-        right: 50%;
-        width: 354px;
+        left: 0;
+        width: 100%;
         height: 434px;
-        transform: translateX(214%);
     }
-    &::before {
-        content: "";
-        background: url('../img/info-1.png') no-repeat 0 0;
-        position: absolute;
-        bottom: -3px;
-        left: 50%;
-        width: 240px;
-        height: 351px;
-        transform: translateX(-274%);
-    }
+    // &::before {
+    //     content: "";
+    //     background: url('../img/info-1.png') no-repeat 0 0;
+    //     position: absolute;
+    //     bottom: -3px;
+    //     left: 50%;
+    //     width: 240px;
+    //     height: 351px;
+    //     transform: translateX(-274%);
+    // }
 }
 
 .info__date {
@@ -43,6 +43,7 @@
     color: #FE5F55;
     margin-bottom: 20px;
     position: relative;
+    z-index: 2;
 
     &::before {
         content: "";
@@ -60,6 +61,7 @@
     margin: 0 auto;
     max-width: 750px;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .info__adress {
@@ -70,6 +72,8 @@
     letter-spacing: -0.03em;
     margin-top: 0;
     margin-bottom: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .info__time {
@@ -78,5 +82,43 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 20px;
-    // letter-spacing: -0.03em;
+    position: relative;
+    z-index: 2;
+}
+
+@media(max-width: 768px) {
+    .info__date {
+        font-size: 34px;
+        line-height: 130%;
+        &::before {
+            display: none;
+        }
+    }
+
+    .info__adress {
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    .info__time {
+        font-size: 30px;
+        line-height: 130%;
+    }
+}
+
+@media(max-width: 768px) {
+    .info__date {
+        font-size: 25px;
+        &::before {
+            display: none;
+        }
+    }
+
+    .info__adress {
+        font-size: 24px;
+    }
+
+    .info__time {
+        font-size: 24px;
+    }
 }

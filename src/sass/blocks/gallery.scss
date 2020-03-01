@@ -97,6 +97,7 @@ margin: 0;
   &--active {
     display: block;
   }
+
   .swiper-container {
       width: 100%;
         height: 100%;
@@ -109,6 +110,7 @@ margin: 0;
       background-position: center;
       height: 100%;
     height: 600px;
+
 
     }
     .gallery-top {
@@ -125,12 +127,12 @@ margin: 0;
       height: 100%;
       opacity: 0.4;
       min-height: 100px;
-      position:relative;
+
     }
     .gallery-thumbs .swiper-slide-thumb-active {
       opacity: 1;
     }
-    .swiper-slide__checkbox {
+.swiper-slide__checkbox {
       position: absolute;
       top: 7px;
       right: 35px;
@@ -184,6 +186,7 @@ margin: 0;
 .swiper-slide__checkbox input[type="checkbox"]:checked + label::after {
     content: "";
 }
+
 
 }
 
