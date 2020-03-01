@@ -5,6 +5,8 @@
   var gallerySliders = [];
   var thumbs = Array.from(document.querySelectorAll('.gallery-thumbs'));
   var tops = Array.from(document.querySelectorAll('.gallery-top'));
+  var nextBtns = Array.from(document.querySelectorAll('.gallery .swiper-button-next'));
+  var prevBtns = Array.from(document.querySelectorAll('.gallery .swiper-button-prev'));
   if (tops && thumbs) {
 
   tops.forEach(function(item, i) {
@@ -19,15 +21,15 @@
   var gT = new Swiper(tops[i], {
     spaceBetween: 10,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: nextBtns[i],
+      prevEl: prevBtns[i],
     },
     thumbs: {
       swiper: thumbsSliders[i]
     }
   });
   gallerySliders.push(gT);
-  })
+});
 }
 
 

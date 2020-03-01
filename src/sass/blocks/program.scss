@@ -88,6 +88,7 @@ margin-bottom: 48px;
   display: none;
   &--active {
     display: block;
+
   }
 }
 
@@ -115,9 +116,10 @@ outline: none;
   min-height: 51px;
   &--active .program__sections-btn {
     background: #FCF7FF;
-   //box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     outline: none;
     border: none;
+
   }
 }
 
