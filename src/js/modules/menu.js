@@ -18,6 +18,8 @@ $(".header__burger").on('click', function(){
 
 $(window).on('resize', function(){
   if($(document).width() > 1024) {
-    $('.header__menu').show();
+    $('.header__menu').css('display', 'flex');
+  } else {
+    $('.header__menu').css('display', 'none');
   }
 })

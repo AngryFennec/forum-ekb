@@ -1,5 +1,6 @@
 'use strict';
 (function() {
+
   var thumbsSliders = [];
   var gallerySliders = [];
   var thumbs = Array.from(document.querySelectorAll('.gallery-thumbs'));
