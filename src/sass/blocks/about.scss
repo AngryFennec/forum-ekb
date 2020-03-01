@@ -134,6 +134,12 @@
     &--15::before {
         content: '15';
     }
+
+    &--6 {
+        & span {
+            padding-left: 54px;
+        }
+    }
 }
 
 @media (max-width: 1460px) {
