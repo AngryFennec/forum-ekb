@@ -256,4 +256,19 @@ margin-right: 96px;
     margin-right: 0;
   }
 
+  .program__item {
+    font-size: 18px;
+    line-height: 120%;
+    & span {
+      min-width: 110px;
+      font-size: 18px;
+    line-height: 120%;
+    }
+  }
+
+  .program__sections-btn {
+    font-size: 12px;
+line-height: 120%;
+  }
+
 }

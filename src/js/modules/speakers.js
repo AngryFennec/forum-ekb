@@ -4,8 +4,8 @@
 // var pricesSwiper;
     let  speakersSwiper = new Swiper('.speakers__container', {
         initialSlide: 1,
-        slidesPerView: '3',
-        spaceBetween: -150,
+        slidesPerView: 1,
+        spaceBetween: 150,
         centeredSlides: true,
         speed: 1000,
         navigation: {
@@ -16,5 +16,14 @@
             el: '.speakers__bullets',
             clickable: true,
           },
+            breakpoints: {
+          800: {
+            initialSlide: 1,
+            slidesPerView: 3,
+            spaceBetween: -150,
+            centeredSlides: true,
+            speed: 1000,
+    },
+  }
     });
 })();
