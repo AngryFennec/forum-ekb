@@ -7,7 +7,7 @@
         slidesPerView: 1,
         spaceBetween: 150,
         centeredSlides: true,
-        speed: 1000,
+        speed: 1500,
         navigation: {
         nextEl: '.speakers__next',
         prevEl: '.speakers__prev',
@@ -22,7 +22,7 @@
             slidesPerView: 3,
             spaceBetween: -150,
             centeredSlides: true,
-            speed: 1000,
+            speed: 1500,
     },
   }
     });
