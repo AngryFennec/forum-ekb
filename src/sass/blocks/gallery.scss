@@ -31,6 +31,8 @@
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 90px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .gallery__btns {
@@ -53,6 +55,7 @@ min-height: 86px;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .gallery__tab {
@@ -187,4 +190,120 @@ margin: 0;
 }
 
 
+}
+.gallery__tabs-header {
+  display: none;
+}
+
+
+@media (max-width: 1343px) {
+  .gallery__tab {
+    &:nth-child(4n) {
+      margin-right: 48px;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+
+  .gallery__tabs-wrapper {
+    /* размер и положение */
+    position: relative; /* Enable absolute positioning for children and pseudo elements */
+    width: 600px;
+    padding: 10px;
+    margin: 0 auto;
+
+    /* цвет и фон */
+    background: #ffffff;
+    color: #000000;
+    outline: none;
+    cursor: pointer;
+
+    /* шрифт */
+    font-weight: bold;
+}
+.gallery__tabs-wrapper:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -6px;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent #000;
+}
+  .gallery__tabs {
+    position: absolute;
+    top: 100%;
+    left: 0; /* Size */
+    right: 0; /* Size */
+
+    /* Styles */
+    background: #fff;
+    font-weight: normal; /* Overwrites previous font-weight: bold; */
+
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+    list-style: none;
+  }
+  .gallery__tabs-header {
+    display: block;
+  }
+
+  .gallery__tab-text {
+      display: block;
+      text-decoration: none;
+      color: #000000;
+      padding: 10px 20px;
+  }
+
+  /* Hover state */
+  .gallery__tab:hover {
+      background: #f3f8f8;
+  }
+
+  /* Active state */
+  .gallery__tabs-wrapper.active .gallery__tabs {
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 100;
+  }
+
+  .gallery__tabs-wrapper.active:after {
+      border-color: #000000 transparent;
+      border-width: 6px 6px 0 6px ;
+      margin-top: -3px;
+  }
+
+  .gallery__tabs-wrapper.active {
+    
+  }
+
+.gallery__tab {
+  background: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+  .gallery__header {
+      padding: 20px;
+      font-size: 30px;
+      line-height: 30px;
+      max-width: 280px;
+      box-shadow: 15px 15px 0 0 #90C7B6;
+      margin-top: 40px;
+  }
 }
