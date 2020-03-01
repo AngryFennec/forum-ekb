@@ -212,7 +212,8 @@ margin: 0;
   .gallery__tabs-wrapper {
     /* размер и положение */
     position: relative; /* Enable absolute positioning for children and pseudo elements */
-    width: 600px;
+    max-width: 600px;
+    width: 100%;
     padding: 10px;
     margin: 0 auto;
 
@@ -282,7 +283,7 @@ margin: 0;
   }
 
   .gallery__tabs-wrapper.active {
-    
+
   }
 
 .gallery__tab {
@@ -298,6 +299,10 @@ margin: 0;
 
 
 @media (max-width: 768px) {
+  .gallery__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .gallery__header {
       padding: 20px;
       font-size: 30px;
@@ -305,5 +310,12 @@ margin: 0;
       max-width: 280px;
       box-shadow: 15px 15px 0 0 #90C7B6;
       margin-top: 40px;
+  }
+
+  .gallery__btns {
+    width: 100%;
+  }
+  .gallery__btn {
+    width: 45%;
   }
 }
