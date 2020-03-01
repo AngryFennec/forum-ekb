@@ -13,8 +13,8 @@
         prevEl: '.speakers__prev',
         },
         pagination: {
-            el: '.speakers__bullets'
+            el: '.speakers__bullets',
+            clickable: true,
           },
-        paginationClickable: true,
     });
 })();
