@@ -1,0 +1,340 @@
+<section class="speakers" id="speakers">
+  <h2 class="speakers__header">Спикеры</h2>
+  <ul class="speakers__list">
+    <li class="speakers__item">
+      <a class="speakers__link" href="#">
+        <div><img src="img/about-1.jpg" alt="фотография"></div>
+        <span>Севостьянова</span>
+        <span>Ольга</span>
+        <span>Федоровна</span>
+      </a>
+    </li>
+    <li class="speakers__item">
+      <a class="speakers__link" href="#">
+        <div><img src="img/about-1.jpg" alt="фотография"></div>
+        <span>Севостьянова</span>
+        <span>Ольга</span>
+        <span>Федоровна</span>
+      </a>
+    </li>
+    <li class="speakers__item">
+      <a class="speakers__link" href="#">
+        <div><img src="img/about-1.jpg" alt="фотография"></div>
+        <span>Пескарев</span>
+        <span>Сергей</span>
+        <span>Александрович</span>
+      </a>
+    </li>
+    <li class="speakers__item">
+      <a class="speakers__link" href="#">
+        <div><img src="img/about-1.jpg" alt="фотография"></div>
+        <span>Пескарев</span>
+        <span>Сергей</span>
+        <span>Александрович</span>
+      </a>
+    </li>
+    <li class="speakers__item">
+      <a class="speakers__link" href="#">
+        <div><img src="img/about-1.jpg" alt="фотография"></div>
+        <span>Пескарев</span>
+        <span>Сергей</span>
+        <span>Александрович</span>
+      </a>
+    </li>
+  </ul>
+  <div class="speakers__popup" style="display: none">
+    <div class="speakers__popup-block">
+      <button class="speakers__popup-сlose"><img src="img/close-button.svg" alt="кнопка закрытия окна"></button>
+      <div class="speaker__card">
+        <img class="speaker__foto" src="img/about-1.jpg" alt="фотография">
+        <div class="speaker__header-block">
+          <div class="speaker__text-block">
+            <h3 class="speaker__name">Мартин Ролл</h3>
+          </div>
+        </div>
+        <div class="speakers__block">
+          <p class="speaker__about">Председатель Конференции Женского Форума</p>
+        </div>
+        <div class="speaker__theme-block">
+          <span>Город: </span>
+          <p class="speaker__theme">Москва</p>
+        </div>
+        <div class="speaker__theme-block">
+          <span>Тема: </span>
+          <p class="speaker__theme">Мартин Ролл предлагает опытным глобальным бизнес-стратегам, старшим консультантам и помощникам для компаний из списка Fortune 500.</p>
+        </div>
+        <div class="speaker__theme-block">
+          <span>Место работы: </span>
+          <p class="speaker__theme">Мартин Ролл предлагает опытным глобальным бизнес-стратегам, старшим консультантам и помощникам для компаний из списка Fortune 500.</p>
+        </div>
+        <a class="speaker__presentation btn btn--small" href="#">Скачать презентацию</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <style>
+    .speakers {
+      background-color: #FCF7FF;
+      padding-bottom: 80px;
+    }
+
+    .speakers__header {
+        width: 100%;
+        max-width: 420px;
+        box-sizing: border-box;
+        padding: 38px;
+        border: 2px solid #90C7B6;
+        background: white;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        box-shadow: 58px 48px 0 0 #90C7B6;
+        margin: 50px auto;
+        margin-top: 90px;
+    }
+
+    .speakers__container {
+        max-width: 1236px;
+        margin-top: 120px;
+        padding: 0 100px;
+        padding-bottom: 70px;
+    }
+
+    .speakers__list {
+        padding: 0;
+        list-style: none;
+        max-width: 1305px;
+        margin: 117px auto 480px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .speakers__item {
+        margin: 0 10px 30px 10px;
+    }
+
+    .speakers__item img {
+        width: 179px;
+        height: 179px;
+        border: 11px solid #90C7B6;
+        border-radius: 50%;
+    }
+
+    .speakers__link {
+        font-family: inherit;
+        color: black;
+        text-align: center;
+        font-weight: 300;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .speakers__link span {
+        align-self: center;
+        font-size: 22px;
+        line-height: 26px;
+        position: relative;
+    }
+    .speakers__link span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        left: 0;
+        bottom: 0;
+    }
+
+    .speaker__card {
+        background: white;
+        padding: 32px 32px 55px 32px;
+        max-width: 411px;
+        box-sizing: border-box;
+    }
+
+    .speaker__name {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: right;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .speaker__about {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: right;
+        margin-bottom: 40px;
+    }
+
+    .speaker__header-block img {
+        align-self: flex-start;
+        margin-right: 5px;
+    }
+
+    .speaker__theme-block {
+        margin-top: 0;
+        display: flex;
+    }
+
+    .speaker__theme-block span {
+        width: 20%;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        flex-shrink: 0;
+        padding-right: 20px;
+    }
+
+    .speaker__theme {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .speaker__presentation {
+        align-self: center;
+        margin: 20px auto 0 auto;
+    }
+
+    .speakers__popup-сlose {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        top: 10px;
+        right: 10px;
+        box-shadow: none;
+    }
+
+    .speakers__popup-block {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        max-width: 411px;
+    }
+
+    .speaker__foto {
+        width: 101px;
+        height: 101px;
+        border: 6px solid #90C7B6;
+        border-radius: 50%;
+        float: left;
+    }
+
+    .speakers__popup {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    @media (max-width: 768px) {
+        .speakers {
+            padding-bottom: 0;
+        }
+        .speakers__header {
+            padding: 20px;
+            font-size: 24px;
+            line-height: 27px;
+            max-width: 280px;
+            box-shadow: 15px 15px 0 0 #90C7B6;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .speakers__list {
+            margin-top: 30px;
+            padding-left: 10px;
+            margin-bottom: 0;
+        }
+        .speakers__item {
+            max-width: 90px;
+            min-height: 90px;
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .speakers__item img {
+            width: 79px;
+            height: 79px;
+            border: 6px solid #90C7B6;
+        }
+
+        .speakers__link span {
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .speakers__popup-block {
+            height: 100%;
+            overflow: auto;
+        }
+    }
+
+  </style>
+
+  <script>
+    $('.speakers__link').on('click', function (evt) {
+        evt.preventDefault();
+        $('.speakers__popup').fadeIn(300);
+    });
+
+    $(document).on('keydown', function (evt) {
+      if (evt.keyCode === 27) {
+        $('.speakers__popup').fadeOut(300);
+      }
+    });
+
+    $('.speakers__popup').on('click', function(evt) {
+        if($(evt.target)[0] === $('.speakers__popup')[0]) {
+          $('.speakers__popup').fadeOut(300);
+        }
+    })
+
+    $('.speakers__popup-сlose').on('click', function (evt) {
+        $('.speakers__popup').fadeOut(300);
+    });
+  </script>
+
+
+
+
+
+.about__item--left img {
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.about__item--right img {
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+@media (max-width: 1460px) {
+    .about__item--left img {
+        width: 100%;
+        max-width: 534px;
+        height: auto;
+    }
+
+    .about__item--right img {
+        width: 100%;
+        max-width: 534px;
+        height: auto;
+    }
+}

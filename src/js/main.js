@@ -9,3 +9,4 @@
 //= modules/gallery.js
 //= modules/dropdown.js
 //= modules/form.js
+//= modules/popup.js

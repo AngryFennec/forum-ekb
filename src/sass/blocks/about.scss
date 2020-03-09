@@ -60,7 +60,7 @@
     & img {
         align-self: flex-start;
     }
-    &--left img {
+    .about__item--left img {
         margin-left: 78px;
         z-index: 2;
         flex-shrink: 0;
@@ -159,6 +159,7 @@
             }
 
             & img {
+                width: 100%;
                 max-width: 534px;
                 height: auto;
 
@@ -173,6 +174,13 @@
             }
 
             & img {
+
+                width: 50%;
+                height: auto;
+                // width: 50%;
+                // height: auto;
+                margin-left: -90px;
+
                 // width: 50%;
                 // height: auto;
                 margin-left: -90px;

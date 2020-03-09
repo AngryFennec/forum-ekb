@@ -22,7 +22,6 @@
 .speakers__container {
     max-width: 1236px;
     margin-top: 120px;
-
     padding: 0 100px;
     padding-bottom: 70px;
 }
@@ -30,13 +29,52 @@
 .speakers__list {
     padding: 0;
     list-style: none;
+    max-width: 1305px;
+    margin: 117px auto 480px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.speakers__item {
+    margin: 0 10px 30px 10px;
+}
+
+.speakers__item img {
+    width: 179px;
+    height: 179px;
+    border: 11px solid #90C7B6;
+    border-radius: 50%;
+}
+
+.speakers__link {
+    font-family: inherit;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.speakers__link span {
+    align-self: center;
+    font-size: 22px;
+    line-height: 26px;
+    position: relative;
+}
+.speakers__link span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
 }
 
 .speaker__card {
     background: white;
-    padding: 32px 45px 55px 32px;
-    display: flex;
-    flex-direction: column;
+    padding: 32px 32px 55px 32px;
     max-width: 411px;
     box-sizing: border-box;
 }
@@ -45,35 +83,34 @@
     font-size: 30px;
     line-height: 36px;
     text-align: right;
-    margin-top: 15px;
-    margin-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .speaker__about {
     font-size: 24px;
     line-height: 29px;
     text-align: right;
+    margin-bottom: 40px;
 }
 
-.speaker__header-block {
-    display: flex;
-
-    & img {
-        align-self: flex-start;
-    }
-
+.speaker__header-block img {
+    align-self: flex-start;
+    margin-right: 5px;
 }
 
 .speaker__theme-block {
-    margin-top: 15px;
+    margin-top: 0;
     display: flex;
+}
 
-    & span {
-        font-size: 18px;
-        line-height: 22px;
-        padding-left: 5px;
-        margin-right: 45px;
-    }
+.speaker__theme-block span {
+    width: 20%;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    flex-shrink: 0;
+    padding-right: 20px;
 }
 
 .speaker__theme {
@@ -81,102 +118,94 @@
     font-size: 18px;
     line-height: 22px;
     margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .speaker__presentation {
     align-self: center;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
 }
 
-.speakers .swiper-slide{
-    transition: margin-top 1s, opacity 1s;
-    opacity: 0;
-    margin-top: 22px;
-    display: flex;
-    justify-content: center;
+.speakers__popup-сlose {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    top: 10px;
+    right: 10px;
+    box-shadow: none;
 }
 
-.speakers .swiper-slide-active {
-    transition: margin 1s, opacity 1s;
-    opacity: 1;
-    z-index: 1;
-    margin-top: 0;
-    margin-bottom: 22px;
-
-
-    & .speaker__card {
-        box-shadow: 0px 4px 27px rgba(0, 0, 0, 0.25);
-        transition: 1s;
-
-
-    }
+.speakers__popup-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 411px;
 }
 
-.speakers .swiper-slide-next {
-    justify-content: flex-start;
-    opacity: 0.5;
-    transition: 1s;
+.speaker__foto {
+    width: 101px;
+    height: 101px;
+    border: 6px solid #90C7B6;
+    border-radius: 50%;
+    float: left;
 }
 
-.speakers .swiper-slide-prev {
-    justify-content: flex-end;
-    opacity: 0.5;
-    transition: 1s;
-}
-
-.speakers .swiper-button-prev {
-    left: 80px;
-    &::after {
-        font-size: 65px;
-        font-weight: 300;
-        color: grey;
-    }
-}
-.speakers .swiper-button-next {
-    right: 80px;
-    &::after {
-        font-size: 65px;
-        font-weight: 300;
-        color: grey;
-    }
-
-}
-
-.speakers .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    opacity: 1;
-    background: transparent;
-    border: 1px solid black;
-
-}
-
-.speakers .swiper-pagination-bullet-active {
-    background: black;
-}
-
-.speakers .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 10px;
+.speakers__popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
+    .speakers {
+        padding-bottom: 0;
+    }
     .speakers__header {
         padding: 20px;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 24px;
+        line-height: 27px;
         max-width: 280px;
         box-shadow: 15px 15px 0 0 #90C7B6;
-        margin-top: 40px;
+        margin-top: 10px;
         margin-bottom: 40px;
     }
-}
 
-@media (max-width: 760px) {
-    .speakers .swiper-button-prev {
-display: none;
+    .speakers__list {
+        margin-top: 30px;
+        padding-left: 10px;
+        margin-bottom: 0;
     }
-    .speakers .swiper-button-next {
-display: none;
+    .speakers__item {
+        max-width: 90px;
+        min-height: 90px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 
+    .speakers__item img {
+        width: 79px;
+        height: 79px;
+        border: 6px solid #90C7B6;
+    }
+
+    .speakers__link span {
+        font-size: 13px;
+        line-height: 16px;
+    }
 }
+
+@media (max-width: 360px) {
+    .speakers__popup-block {
+        height: 100%;
+        overflow: auto;
+    }
 }
